@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margon: 0;
+    pading: 0;
+    color: white
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background-color: #1d4355;
+}
+
+/* Default state */
+.customOrange {
+    background-color: #FE951C;
+    /* Orange */
+}
+
+/* Pressed state */
+.customOrange:active {
+    background-color: #FFFF00;
+    /* Yellow */
+}

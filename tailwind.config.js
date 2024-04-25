@@ -4,12 +4,14 @@ module.exports = {
     "./src/pages/**/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
-  theme: {
+ theme: {
     extend: {
       colors: {
         customBlue: '#072840',
         customOrange: '#FE951C',
         customYellow: '#FFFB03',
+        customWhite: '#FFFFFF',
+        customBackground: '#1D4355',
       },
     },
   },

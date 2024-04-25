@@ -4,8 +4,8 @@ import React from 'react';
 import { FiHome, FiTag , FiInfo, FiMail } from 'react-icons/fi';
 export default function Navbar() {
   return (
-    <nav className="bg-customBlue p-4">
-      <div className="container mx-auto flex justify-between items-center">
+<nav className=" p-4 rounded-tl rounded-tr rounded-bl rounded-br">
+        <div className="container mx-auto flex justify-between items-center">
         <Link to="/">
           <img src='/Logo.png' alt="Logo" className="h-12" />
         </Link>
@@ -15,7 +15,7 @@ export default function Navbar() {
             Home
           </Link>
           <span className="mx-4">|</span>
-          <Link to="/pricing" className="text-customYellow hover:text-white-600 hover:shadow-md flex items-center transition duration-300 transform hover:-translate-y-1">
+          <Link to="/pricing" className="text-customOrange  hover:text-white-600 hover:shadow-md flex items-center transition duration-300 transform hover:-translate-y-1">
             <FiTag className="mr-2" />
             Pricing
           </Link>
@@ -26,7 +26,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="flex space-x-4">
-          <Link to="/contact" className="text-customYellow hover:text-white-600 hover:shadow-md flex items-center transition duration-300 transform hover:-translate-y-1">
+          <Link to="/contact" className="text-customOrange hover:text-white-600 hover:shadow-md flex items-center transition duration-300 transform hover:-translate-y-1">
             <FiMail className="mr-2" />
             Contact
           </Link>

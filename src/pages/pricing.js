@@ -5,7 +5,7 @@ export default function Pricing() {
   return (
     <Layout>
       <div>
-        <h2 className="text-3xl font-bold underline">Our reices</h2>
+        <h2 className="text-3xl font-bold underline">Our Preices</h2>
       </div>
     </Layout>
   );
