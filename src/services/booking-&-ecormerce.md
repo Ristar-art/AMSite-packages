@@ -1,9 +1,9 @@
 ---
-title: Quick & Easy
+title: Custorm-made
 description: We offer a range of services to help you achieve your goals
-slug: three-pages
-services: Three page
-thumb: ../images/thumb/Threepage.jpeg
+slug: booking-&-ecormerce
+services: Booking & Ecormerce
+thumb: ../images/thumb/eCormerce.jpeg
 ---
 
 title: Web Development

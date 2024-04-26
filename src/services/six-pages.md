@@ -1,9 +1,9 @@
 ---
-title: Quick & Easy
+title: Pro-Ubgrade
 description: We offer a range of services to help you achieve your goals
-slug: three-pages
-services: Three page
-thumb: ../images/thumb/Threepage.jpeg
+slug: six-pages
+services: six pagee
+thumb: ../images/thumb/Sixpage.jpeg
 ---
 
 title: Web Development
