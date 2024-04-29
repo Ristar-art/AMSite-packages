@@ -11,7 +11,10 @@ export default function serviceDetails({ data }) {
       <div>
         <h2>{frontmatter.title}</h2>
         <h3>{frontmatter.services}</h3>
-        <Img fluid={frontmatter.thumb.childrenImageSharp[0].fluid} alt={frontmatter.title} />
+        <Img fluid={frontmatter.thumb.childrenImageSharp[0].fluid} alt={frontmatter.title}
+          // className="w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
+          // style={{ transform: "scale(1.1)" }}
+        />
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>

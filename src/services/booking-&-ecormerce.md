@@ -1,9 +1,12 @@
 ---
 title: Custorm-made
-description: We offer a range of services to help you achieve your goals
+description: |
+    We offer a range of services to help you achieve your goals
+    Custom-made solutions tailored to your needs
+    Expert guidance and support throughout the process
 slug: booking-&-ecormerce
 services: Booking & Ecormerce
-thumb: ../images/thumb/eCormerce.jpeg
+thumb: ../images/thumb/eCormerce.png
 ---
 
 title: Web Development

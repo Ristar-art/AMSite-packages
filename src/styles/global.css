@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 * {
-    margon: 0;
-    pading: 0;
+    margin: 0;
+    padding: 0;
     color: white
 }
 
@@ -27,4 +27,18 @@ body {
 .customOrange:active {
     background-color: #FFFF00;
     /* Yellow */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Adjust opacity as needed */
+    border-bottom: 1px solid #ccc;
 }

@@ -1,9 +1,12 @@
 ---
 title: Quick & Easy
-description: We offer a range of services to help you achieve your goals
+description: |
+   We offer a range of services to help you achieve your goals
+   Custom-made solutions tailored to your needs
+   Expert guidance and support throughout the process
 slug: three-pages
 services: Three page
-thumb: ../images/thumb/Threepage.jpeg
+thumb: ../images/thumb/Threepage.png
 ---
 
 title: Web Development

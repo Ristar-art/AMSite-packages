@@ -1,9 +1,12 @@
 ---
 title: Pro-Ubgrade
-description: We offer a range of services to help you achieve your goals
+description: |
+    We offer a range of services to help you achieve your goals
+    Custom-made solutions tailored to your needs
+    Expert guidance and support throughout the process
 slug: six-pages
 services: six pagee
-thumb: ../images/thumb/Sixpage.jpeg
+thumb: ../images/thumb/Sixpage.png
 ---
 
 title: Web Development
