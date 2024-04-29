@@ -7,7 +7,7 @@ export default function About() {
       <div>
         <h1 className="text-3xl font-bold underline">About Page</h1>
         <p>
-        In our endeavor to revolutionize the marketing and ICT industries, AMS operates as a dynamic blend of service-based and eCommerce retail solutions. Situated in Soweto, South Africa, our primary focus is on serving the African market, specifically targeting emerging enterprises, cooperatives, medium-sized businesses, and Enterprise + Supplier Development (ESD) HODs. 
+        In our endeavor o revolutionize the marketing and ICT industries, AMS operates as a dynamic blend of service-based and eCommerce retail solutions. Situated in Soweto, South Africa, our primary focus is on serving the African market, specifically targeting emerging enterprises, cooperatives, medium-sized businesses, and Enterprise + Supplier Development (ESD) HODs. 
 
 Through our comprehensive suite of services, we aim to address the pressing need for businesses to establish strong brands, engage with their target audience creatively, and efficiently manage the selling process. 
 
