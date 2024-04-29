@@ -2,18 +2,21 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Layout from '../components/Layout';
-import { Link } from 'gatsby';
-export default function Contact() {
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+export default function Contact({ data }) {
   const [formData, setFormData] = useState({
     name: '',
     surname: '',
     email: '',
     message: ''
   });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
@@ -24,10 +27,14 @@ export default function Contact() {
       message: ''
     });
   };
+
   return (
     <Layout>
-      <div className="max-w-screen-xl mx-auto flex">
-        <div className="w-1/2 pr-8">
+      <section className="hero w-full min-h-screen h-screen bg-cover bg-center" >
+        <div className="container mx-auto p-4 flex items-center">
+        <Img fluid={data.file.childImageSharp.fluid} className="w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2" style={{ transform: 'scale(1.1)' }} />
+
+          <div className="w-1/2 pr-8">
           <h2 className="text-3xl font-semibold mb-4">Send A Message</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
@@ -38,7 +45,8 @@ export default function Contact() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded-md"
+                className="w-full p-2 border rounded-md transition duration-300 focus:ring focus:border-customYellow text-customBlue"
+                placeholder="Enter your name"
                 required
               />
             </div>
@@ -50,7 +58,8 @@ export default function Contact() {
                 name="surname"
                 value={formData.surname}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded-md"
+                className="w-full p-2 border rounded-md transition duration-300 focus:ring focus:border-customYellow text-customBlue"
+                placeholder="Enter your surname"
                 required
               />
             </div>
@@ -62,7 +71,8 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded-md"
+                className="w-full p-2 border rounded-md transition duration-300 focus:ring focus:border-customYellow text-customBlue"
+                placeholder="Enter your email"
                 required
               />
             </div>
@@ -73,31 +83,30 @@ export default function Contact() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded-md"
+                className="w-full p-2 border rounded-md transition duration-300 focus:ring focus:border-customYellow text-customBlue"
+                placeholder="Enter your message"
                 required
               ></textarea>
             </div>
-            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+            <button type="submit" className="bg-customOrange hover:bg-customYellow text-white px-4 py-2 rounded-md transition duration-300">Submit</button>
           </form>
         </div>
-        <div className="w-1/2 pl-8">
-          <h2 className="text-3xl font-semibold mb-4">Get In Touch</h2>
-          <div>
-            <Link to="#" className="block mb-2 text-blue-500">
-              <FontAwesomeIcon icon={faTwitter} className="mr-2" />
-              Twitter
-            </Link>
-            <Link to="#" className="block mb-2 text-blue-500">
-              <FontAwesomeIcon icon={faFacebook} className="mr-2" />
-              Facebook
-            </Link>
-            <Link to="#" className="block mb-2 text-blue-500">
-              <FontAwesomeIcon icon={faInstagram} className="mr-2" />
-              Instagram
-            </Link>
-          </div>
-        </div>
+        
       </div>
+      </section>
     </Layout>
   );
 }
+
+export const query = graphql`
+  query {
+    file(relativePath: {eq: "Logo.png"}) {
+      id
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

@@ -7,12 +7,20 @@ export default function About() {
       <div>
         <h1 className="text-3xl font-bold underline">About Page</h1>
         <p>
-          success Writing page-data.json and slice-data.json files to public
-          directory - 0.013s - 0/3 236.74/s success onPreExtractQueries - 0.002s
-          success extract queries from components - 0.007s success write out
-          requires - 0.001s success Re-building development bundle - 0.080s
-          success Writing page-data.json and slice-data.json files to public
-          directory - 0.012s - 0/3 253.34/s
+        In our endeavor to revolutionize the marketing and ICT industries, AMS operates as a dynamic blend of service-based and eCommerce retail solutions. Situated in Soweto, South Africa, our primary focus is on serving the African market, specifically targeting emerging enterprises, cooperatives, medium-sized businesses, and Enterprise + Supplier Development (ESD) HODs. 
+
+Through our comprehensive suite of services, we aim to address the pressing need for businesses to establish strong brands, engage with their target audience creatively, and efficiently manage the selling process. 
+
+Atlegile Marketing Solutions’ journey began in 2015, driven by a passion to assist local businesses in accessing global markets, leading us to remodel our approach with a clear vision to empower entrepreneurs and elevate brands to new platforms.
+
+
+
+Mission
+
+
+Our mission is to empower African businesses with digital support, fostering their growth into strong, globally recognized brands.
+
+
         </p>
       </div>
     </Layout>
